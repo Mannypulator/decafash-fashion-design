@@ -83,4 +83,31 @@ $(document).ready(function () {
 
         }
     });
+    // UPDATE A DESIGN 
+    $('#update-form').submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: "http://localhost:3000/designs/" + designID,
+            dataType: 'json',
+            type: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                "design_name": $('#design_name').val(),
+                "designer": $('#designer').val(),
+                "quantity": $('#quantity').val(),
+                "price": $('#price').val(),
+                "img_url": $('#img_url').val(),
+                "design_description": $('#description').val()
+
+            }),
+            processData: false,
+            success: function () {
+                alert("Design Updated Successfully");
+                window.location.assign('http://localhost:3000/all-design.html')
+            },
+            error: function (errorThrown) {
+                console.log(errorThrown);
+            }
+        });
+    })
 });
