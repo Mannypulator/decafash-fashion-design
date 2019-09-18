@@ -21,16 +21,16 @@
             <div class="signin">
                 <div class="wrapper">
                     <div class="logo">
-                    <h1>Log <span class="highlight">in</span> </h1>
-                        
+                        <h1>Log <span class="highlight">in</span> </h1>
+
                     </div>
-                    <form id= "loginForm" action="" method="POST">
-                    <div>
+                    <form id="loginForm" action="" method="POST">
+                        <div>
                             <label for="text">Account Type</label>
                             <select class="custom-select" name="products">
-                                    <option  disabled>--select account type--</option>
-                                    <option value="seller">standard User</option>
-                                    <option value="admin">Admin</option>
+                                <option disabled>--select account type--</option>
+                                <option value="seller">standard User</option>
+                                <option value="admin">Admin</option>
                             </select>
                         </div>
                         <div>
@@ -46,19 +46,54 @@
                     </form>
 
                     <div class="links">
-                        <a class="a-link" href="#"><p> Forgot password? </p></a>
+                        <a class="a-link" href="#">
+                            <p> Forgot password? </p>
+                        </a>
                     </div>
-                  
+
                     <a href="signup.html"><input type="submit" class="btn" value="Create an Account"></a>
 
                 </div>
             </div>
             <footer id="footer">
-                     All rights reserved |                 
-                        <a class="link" href="">Terms of Use </a>|
-                        <a class="link" href="">Privacy Policy</a>
-                    
-                </footer>
-            
+                All rights reserved |
+                <a class="link" href="">Terms of Use </a>|
+                <a class="link" href="">Privacy Policy</a>
+
+            </footer>
+
         </div>
         <div id="right">
+            <!--//////////////////////////SLIDER\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <img src="assets/img/slider1.jpg" alt="image of fashion" class="slider">
+            <img src="assets/img/slider2.jpg" alt="image of fashion" class="slider">
+            <img src="assets/img/slider3.jpg" alt="image of fashion" class="slider">
+            <img src="assets/img/slider4.jpg" alt="image of fashion" class="slider">
+            <img src="assets/img/slider5.jpg" alt="image of fashion" class="slider">
+        </div>
+    </div>
+
+
+
+
+</body>
+<script>
+    let slideIndex = 0;
+
+    const homeSlideshow = () => {
+        let slides = document.getElementsByClassName('slider');
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        setTimeout(homeSlideshow, 5000); // Change image every 5 seconds
+    };
+
+    homeSlideshow();
+</script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/login.js"></script>
