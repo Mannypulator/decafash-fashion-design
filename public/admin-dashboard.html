@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Manny">
+    <meta name="description" content="Admin can perform CRUD operations on this page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decafash|admin Dashboard</title>
+    <link href="./assets/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/ico.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+
+        <ul>
+            <div class="links">
+                <li class="dashboard-items"><a href="index.html">Home</a></li>
+                <li class="dashboard-items current"><a href="./new-design.html">Add new Design</a></li>
+                <li class="dashboard-items"><a href="./all-design.html">View All Designs</a></li>
+            </div>
+
+
+        </ul>
+    </header>
+    <main>
+        <section class="admin-dashboard">
+            <h2> Dashboard | Admin</h2>
+            <div class="overview">
+
+                <div class="overview-item">
+                    <p id="user-total" class="stats-total">250&nbsp;<span id="user-total-span" class="stats-title"><br>
+                            Designs</span></p>
+                </div>
+
+                <div class="overview-item">
+                    <p id="loan-total" class="stats-total">50&nbsp;<span id="loan-total-span" class="stats-title"><br>
+                            Users</span></p>
+                </div>
+
+                <div class="overview-item">
+                    <p id="total-paid" class="stats-total">80&nbsp;<span id="total-paid-span"
+                            class="stats-title"><br>Total Views</span></p>
+
+                </div>
+
+
+            </div>
+
+            <div class="user-verification">
+                <div class="view-title-div">
+                    <h3 id="view-title">My Sale Ads</h3>
+                    <!-- <button id="view-view-all" type="button">Grid view </button> -->
+                </div>
+                <table class="user-view">
+                    <thead>
+                        <tr>
+                            <th>Ad ID</th>
+                            <th>Img</th>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="user-view-list">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="admin-dashboard">
+            <div class="section-two">
+                <div class="stats-card-1">
+                    <p id="loan-approved" class="stats-total">36&nbsp;<span id="loan-total-span"
+                            class="stats-title">Jeans<br>
+                            Sold</span></p>
+                </div>
+                <div class="stats-card-2">
+                    <p id="loan-denied" class="stats-total">70&nbsp;<span id="loan-total-span"
+                            class="stats-title">Purchase<br>
+                            Orders</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="assets/js/db.js"></script>
+</body>
+
+</html>
