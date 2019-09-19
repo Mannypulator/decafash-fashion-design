@@ -309,8 +309,8 @@ header a:hover {
 }
 
 
-/* Featured Cars */
-#featured-cars .articles-container {
+/* Featured jeans */
+#featured-jeans .articles-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
@@ -387,7 +387,7 @@ header a:hover {
         padding: 0.50rem;
     }
 
-    #featured-cars .articles-container {
+    #featured-jeans .articles-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0.1rem;
@@ -399,7 +399,7 @@ header a:hover {
 @media(max-width: 600px) {
 
     #showcase .showcase-container,
-    #featured-cars .articles-container,
+    #featured-jeans .articles-container,
     #main-footer .footer-container {
         grid-template-columns: 1fr;
         grid-column: 1;
