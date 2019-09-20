@@ -35,8 +35,8 @@ $(document).ready(function () {
 
         },
     });
-    var designID = location.search.substring(1);//returns entire query parameters without the question mark
-    console.log(designID)
+    var designID = location.search.substring(1);
+    // console.log(designID)
 
     // GET PARTICULAR PRODUCT
     $.ajax({
@@ -83,7 +83,6 @@ $(document).ready(function () {
 
         }
     });
-    
     // UPDATE A DESIGN 
     $('#update-form').submit(function (e) {
         e.preventDefault();
